@@ -13,52 +13,37 @@
 }
 </style>
 
-
-<!--  -->
+ 
 <template>
    <div class="mui-button-row">
+      <router-link to="denglu">
         <button type="button" class="   "  id="login">登录</button>
+      </router-link>
+      <router-link to="/zhuce">
         <button type="button" class="   " >注册</button>
+      </router-link>
     </div>
 </template>
 
 <script>
- import $ from 'jquery'
- import Mock from 'Mock'
+import $ from "jquery";
+import Mock from "Mock";
 export default {
-  data () {
-    return {
-  
-    }
-  },
+  mounted() {
+    Mock.mock("http://123.com", {
+      name: "test",
+      age: 25
+    });
 
-  components: {},
-
-  props: [],
-
-  watch: {
-},
-
-  computed: {},
-
-  mounted () {
-    Mock.mock('http://123.com',{
-    'name':'test',
-    'age':25,
- })
- 
- $.ajax({
-    url:'http://123.com',
-    dataType:'json',
-    success:function(e){
-       console.log(e)  
-    }
-})
-  },
-
-  methods: {}
-}
-
+    $.ajax({
+      url: "http://123.com",
+      dataType: "json",
+      success: function(e) {
+        console.log(e);
+      }
+    });
+  }
+};
 </script>
  
 

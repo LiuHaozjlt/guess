@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
  import denglu from '@/view/denglu/denglu'
-//  import  zhuce from '@/view/zhuce/zhuce'
+ import  zhuce from '@/view/zhuce/zhuce'
 
 Vue.use(Router)
 
@@ -12,10 +12,10 @@ export default new Router({
       name: 'denglu',
       component: denglu
     },
-    // {
-    //   path: '@/view/zhuce/zhuce',
-    //   name: 'zhuce',
-    //   component: zhuce
-    // }
+    {
+      path: '/zhuce',   
+      name: 'zhuce',
+      component: zhuce 
+    }
   ]
 })

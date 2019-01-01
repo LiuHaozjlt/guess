@@ -5,6 +5,7 @@
         <ipt/>
         <nm/>
          <dlbt/>
+       
     </div>
 </template>
 
@@ -26,9 +27,9 @@ export default {
 };
 </script>
 <style scoped>
-  .denglu_marg{
-    margin:0 20px;
-  }
+.denglu_marg {
+  margin: 0 20px;
+}
 </style>
 
 
