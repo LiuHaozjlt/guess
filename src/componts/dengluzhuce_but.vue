@@ -51,7 +51,7 @@ export default {
     url:'http://123.com',
     dataType:'json',
     success:function(e){
-       console.log("sssssssssssss",e) //现在什么问题啊？ 用mock 创建了一个数据 把这个ajax里面的这个成功 console打印出来在浏览器 你这个脚手架不知道怎么搞的啊，先死的不是这个文件啊 嗯  你先搞定脚手架吧 嗯
+       console.log(e)  
     }
 })
   },
